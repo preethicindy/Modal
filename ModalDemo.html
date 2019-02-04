@@ -6,8 +6,9 @@ function ChangeTitle(){
 </script>
 </head>
 
-<button class="btn btn-primary btn-sm" data-target="#clickModal"> Trigger Modal </button>
-<div class = "modal" id="clickModal" tab-index= "-1" />
+
+ <button class="btn btn-primary btn-sm" data-target="#clickModal" data-toggle="modal" > Trigger Model </button>
+ <div class= "modal" id="clickModal" />
  <div class = "modal-dialog">
     <div class = "modal-content">
        <div class = "modal-header">
@@ -15,12 +16,10 @@ function ChangeTitle(){
         <h3 class= "modal-title"> Change Title </h3>
        </div>
         <div class = "modal-body">
-            <input type = "text" id="txt1" placeholder="Type something here..." /> 
-            <input type = "button" id="btn1" value="Click Me" onclick="ChangeTitle()" />
+            <input type = "text" id="txt1" placeholder="Type something here..." onkeyup="ChangeTitle()" />
         </div>
           <div class = "modal-footer">
             <button class = "btn btn-primary btn-sm" data-dismiss= "modal" > Close </button>
           </div>
       </div>
   </div>
-</div>
