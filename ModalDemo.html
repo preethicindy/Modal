@@ -1,0 +1,26 @@
+<head>
+    <script type="text/javascript">
+function ChangeTitle(){
+    document.title = document.getElementById('txt1').value;
+}
+</script>
+</head>
+
+<button class="btn btn-primary btn-sm" data-target="#clickModal"> Trigger Modal </button>
+<div class = "modal" id="clickModal" tab-index= "-1" />
+ <div class = "modal-dialog">
+    <div class = "modal-content">
+       <div class = "modal-header">
+        <button class="close" data-dismiss="modal"> &times; </button>
+        <h3 class= "modal-title"> Change Title </h3>
+       </div>
+        <div class = "modal-body">
+            <input type = "text" id="txt1" placeholder="Type something here..." /> 
+            <input type = "button" id="btn1" value="Click Me" onclick="ChangeTitle()" />
+        </div>
+          <div class = "modal-footer">
+            <button class = "btn btn-primary btn-sm" data-dismiss= "modal" > Close </button>
+          </div>
+      </div>
+  </div>
+</div>
